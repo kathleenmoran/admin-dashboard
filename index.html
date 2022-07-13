@@ -10,11 +10,15 @@
   <body>
     <header>
       <div>
-        <img src="icons/search-icon.svg"/>
-        <input type="text">
-        <img src="icons/bell-icon.svg"/>
-        <img src="icons/user-icon.png"/>
-        <div>Morgan Oakley</div>
+        <div class="search-bar">
+          <img src="icons/search-icon.svg"/>
+          <input type="text">
+        </div>
+        <div class="profile">
+          <img src="icons/bell-icon.svg"/>
+          <img src="icons/user-icon.png"/>
+          <div>Morgan Oakley</div>
+        </div>
       </div>
       <div>
         <div>
@@ -29,7 +33,7 @@
         </ul>
       </div>
     </header>
-    <div>
+    <div class="left-sidebar">
       <div>
         <img src="icons/dashboard-icon.png">
         <h1>Dashboard</h1>
@@ -50,92 +54,94 @@
     </div>
     <div>
       <h2>Your Projects</h2>
-      <div>
-        <h3>Super Cool Project</h3>
-        <p>
-          Sed tempus ut lacus ut scelerisque. Suspendisse sollicitundin nibh erat, 
-          id facilisis felis accumsan nec.
-        </p>
-        <ul>
-          <li><img src="icons/star-plus-outline.svg"/></li>
-          <li><img src="icons/eye-plus-outline.svg"/></li>
-          <li><img src="icons/source-fork.svg"/></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Less Cool Project</h3>
-        <p>
-          Nullam condimentum ipsum ut lectus vehicula consectetur sapien et, facilisis dolor.
-          Duis sem purus, dignissim ut sapien in, varius pelleentesque lacus.
-        </p>
-        <ul>
-          <li><img src="icons/star-plus-outline.svg"/></li>
-          <li><img src="icons/eye-plus-outline.svg"/></li>
-          <li><img src="icons/source-fork.svg"/></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Less Cool Project</h3>
-        <p>
-          Nullam condimentum ipsum ut lectus vehicula consectetur sapien et, facilisis dolor.
-          Duis sem purus, dignissim ut sapien in, varius pelleentesque lacus.
-        </p>
-        <ul>
-          <li><img src="icons/star-plus-outline.svg"/></li>
-          <li><img src="icons/eye-plus-outline.svg"/></li>
-          <li><img src="icons/source-fork.svg"/></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Impossible App</h3>
-        <p>
-          In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a pacerat velit
-          sagittis id.
-        </p>
-        <ul>
-          <li><img src="icons/star-plus-outline.svg"/></li>
-          <li><img src="icons/eye-plus-outline.svg"/></li>
-          <li><img src="icons/source-fork.svg"/></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Easy Peasy App</h3>
-        <p>
-          Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.
-          Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.
-        </p>
-        <ul>
-          <li><img src="icons/star-plus-outline.svg"/></li>
-          <li><img src="icons/eye-plus-outline.svg"/></li>
-          <li><img src="icons/source-fork.svg"/></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Ad Blocker</h3>
-        <p>
-          Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis.
-          Aliquam sed malesuada eros.
-        </p>
-        <ul>
-          <li><img src="icons/star-plus-outline.svg"/></li>
-          <li><img src="icons/eye-plus-outline.svg"/></li>
-          <li><img src="icons/source-fork.svg"/></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Money Maker</h3>
-        <p>
-          Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, 
-          ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.
-        </p>
-        <ul>
-          <li><img src="icons/star-plus-outline.svg"/></li>
-          <li><img src="icons/eye-plus-outline.svg"/></li>
-          <li><img src="icons/source-fork.svg"/></li>
-        </ul>
+      <div class="projects">
+        <div>
+          <h3>Super Cool Project</h3>
+          <p>
+            Sed tempus ut lacus ut scelerisque. Suspendisse sollicitundin nibh erat, 
+            id facilisis felis accumsan nec.
+          </p>
+          <ul>
+            <li><img src="icons/star-plus-outline.svg"/></li>
+            <li><img src="icons/eye-plus-outline.svg"/></li>
+            <li><img src="icons/source-fork.svg"/></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Less Cool Project</h3>
+          <p>
+            Nullam condimentum ipsum ut lectus vehicula consectetur sapien et, facilisis dolor.
+            Duis sem purus, dignissim ut sapien in, varius pelleentesque lacus.
+          </p>
+          <ul>
+            <li><img src="icons/star-plus-outline.svg"/></li>
+            <li><img src="icons/eye-plus-outline.svg"/></li>
+            <li><img src="icons/source-fork.svg"/></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Less Cool Project</h3>
+          <p>
+            Nullam condimentum ipsum ut lectus vehicula consectetur sapien et, facilisis dolor.
+            Duis sem purus, dignissim ut sapien in, varius pelleentesque lacus.
+          </p>
+          <ul>
+            <li><img src="icons/star-plus-outline.svg"/></li>
+            <li><img src="icons/eye-plus-outline.svg"/></li>
+            <li><img src="icons/source-fork.svg"/></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Impossible App</h3>
+          <p>
+            In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a pacerat velit
+            sagittis id.
+          </p>
+          <ul>
+            <li><img src="icons/star-plus-outline.svg"/></li>
+            <li><img src="icons/eye-plus-outline.svg"/></li>
+            <li><img src="icons/source-fork.svg"/></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Easy Peasy App</h3>
+          <p>
+            Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.
+            Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.
+          </p>
+          <ul>
+            <li><img src="icons/star-plus-outline.svg"/></li>
+            <li><img src="icons/eye-plus-outline.svg"/></li>
+            <li><img src="icons/source-fork.svg"/></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ad Blocker</h3>
+          <p>
+            Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis.
+            Aliquam sed malesuada eros.
+          </p>
+          <ul>
+            <li><img src="icons/star-plus-outline.svg"/></li>
+            <li><img src="icons/eye-plus-outline.svg"/></li>
+            <li><img src="icons/source-fork.svg"/></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Money Maker</h3>
+          <p>
+            Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, 
+            ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.
+          </p>
+          <ul>
+            <li><img src="icons/star-plus-outline.svg"/></li>
+            <li><img src="icons/eye-plus-outline.svg"/></li>
+            <li><img src="icons/source-fork.svg"/></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div>
+    <div class="right-sidebar">
       <div>
         <h2>Announcements</h2>
         <div>
@@ -162,27 +168,35 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="trending">
         <h2>Trending</h2>
         <div>
           <img src="icons/user-icon.png"/>
-          <div>@tegan</div>
-          <div>World Peace Builder</div>
+          <div>
+            <div>@tegan</div>
+            <div>World Peace Builder</div>
+          </div>
         </div>
         <div>
           <img src="icons/user-icon.png"/>
-          <div>@morgan</div>
-          <div>Super Cool Project</div>
+          <div>
+            <div>@morgan</div>
+            <div>Super Cool Project</div>
+          </div>
         </div>
         <div>
           <img src="icons/user-icon.png"/>
-          <div>@kendall</div>
-          <div>Life Changing App</div>
+          <div>
+            <div>@kendall</div>
+            <div>Life Changing App</div>
+          </div>
         </div>
         <div>
           <img src="icons/user-icon.png"/>
-          <div>@alex</div>
-          <div>No Traffic Maker</div>
+          <div>
+            <div>@alex</div>
+            <div>No Traffic Maker</div>
+          </div>
         </div>
       </div>
     </div>
