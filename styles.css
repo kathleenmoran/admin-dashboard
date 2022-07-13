@@ -1,11 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: bold;
+}
+
 body {
   display: grid;
   grid-template-columns: 300px 1fr 300px;
   grid-template-rows: 200px 1fr 1fr;
+  height: 100vh;
+  font-family: 'Roboto';
 }
 
 img {
   width: 20px;
+}
+
+ul {
+  list-style: none;
 }
 
 header {
@@ -35,6 +60,39 @@ header ul {
 .left-sidebar {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
+  background-color: #1992D4;
+  color: white;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.left-sidebar > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.left-sidebar > div > img {
+  width: 30px
+}
+
+.left-sidebar li {
+  padding: 10px 2px;
+}
+
+li > img {
+  width: 20px;
+}
+
+.left-sidebar ul {
+  padding: 20px 0px;
+}
+
+.left-sidebar li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .projects {
