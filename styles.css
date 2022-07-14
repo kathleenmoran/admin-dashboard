@@ -28,7 +28,7 @@ body {
   display: grid;
   grid-template-columns: 250px 2fr;
   grid-template-rows: 140px 1fr;
-  font-family: 'Roboto';
+  font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
   height: 100vh;
 }
 
@@ -67,7 +67,6 @@ header > div > div {
 
 input {
   flex: 1;
-  background-color: #E2E8F0;
   border: none;
   height: 33px;
   border-radius: 14px;
@@ -81,14 +80,17 @@ input {
 }
 
 img[src="icons/user-icon.png"] {
-  width: 40px
+  height: 40px;
+  width: 40px;
 }
 
 .greeting {
   gap: 10px;
   white-space: nowrap;
 }
+
 .greeting > img {
+  height: auto;
   width: 60px;
 }
 
@@ -102,9 +104,13 @@ header ul {
   gap: 20px;
 }
 
-button {
+button,
+.left-sidebar {
   background-color: #1992D4;
   color: white;
+}
+
+button {
   border: none;
   width: 90px;
   height: 40px;
@@ -115,8 +121,6 @@ button {
 .left-sidebar {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
-  background-color: #1992D4;
-  color: white;
   padding: 30px;
   font-weight: bold;
   font-size: 0.95rem;
@@ -161,7 +165,8 @@ h2 {
 }
 
 .projects-container,
-.right-sidebar {
+.right-sidebar,
+input {
   background-color: #E2E8F0;
 }
 
@@ -174,16 +179,21 @@ h2 {
   padding-bottom: 20px;
 }
 
+.projects > div,
+.right-sidebar > div > div {
+  background-color: white;
+}
+
 .projects > div {
   height: 140px;
   position: relative;
-  background-color: white;
   border-left: 7px solid #F0B429;
   border-radius: 8px;
   padding: 30px 15px;
 }
 
-p {
+p,
+.trending > div > div > div > div:last-child {
   font-weight: lighter;
   color: gray
 }
@@ -222,14 +232,8 @@ p + ul {
 }
 
 .right-sidebar > div > div {
-  background-color: white;
   border-radius: 8px;
   padding: 20px;
-}
-
-.trending > div > div > div > div:last-child {
-  color: gray;
-  font-weight: lighter;
 }
 
 .announcements > div:not(:last-child) > p {
