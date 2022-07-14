@@ -26,7 +26,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 250px 2fr 1fr;
+  grid-template-columns: 250px 2fr;
   grid-template-rows: 140px 1fr;
   font-family: 'Roboto';
   height: 100vh;
@@ -155,7 +155,7 @@ li > img {
 }
 
 h2 {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 10px;
   font-size: 1.3rem;
 }
@@ -179,7 +179,7 @@ h2 {
   position: relative;
   background-color: white;
   border-left: 7px solid #F0B429;
-  border-radius:8px;
+  border-radius: 8px;
   padding: 30px 15px;
 }
 
@@ -194,7 +194,7 @@ p + ul {
   position: absolute;
   bottom: 30px;
   right: 30px;
-  gap: 2vw;
+  gap: 0px;
 }
 
 .right-sidebar {
@@ -202,10 +202,42 @@ p + ul {
   flex-direction: column;
   grid-column: 3 / 4;
   grid-row: 2 / 4;
-  padding-right: 40px;
+  padding-right: 30px;
+}
+
+.right-sidebar > div {
+  max-width: 300px;
+  border-radius: 8px;
 }
 
 .trending > div {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trending > div > div {
+  display: flex;
+  gap: 15px;
+}
+
+.right-sidebar > div > div {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.trending > div > div > div > div:last-child {
+  color: gray;
+  font-weight: lighter;
+}
+
+.announcements > div:not(:last-child) > p {
+  border-bottom: solid gray 1px;
+  padding-bottom: 20px;
+}
+
+.announcements > div:not(:first-child) > h3 {
+  padding-top: 15px;
 }
 
