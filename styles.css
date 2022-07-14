@@ -172,7 +172,7 @@ input {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-column: 2 / 3;
   grid-row: 2 / 4;
   gap: 20px;
@@ -190,6 +190,12 @@ input {
   border-left: 7px solid #F0B429;
   border-radius: 8px;
   padding: 30px 15px;
+}
+
+.projects > div,
+header,
+.right-sidebar > div > div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 p,
